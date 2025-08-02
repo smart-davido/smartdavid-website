@@ -1,0 +1,650 @@
+b
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: solid 0px;
+            margin: 0px;
+        }
+
+        .gt {
+            width: 100%;
+            height: 300px;
+        }
+
+        .first {
+            height: 100px;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        .b {
+            margin: 25px;
+            font-size: larger;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .b:hover {
+            color: wheat;
+        }
+
+        .c {
+            border-radius: 50%;
+            color: white;
+        }
+
+        .body {
+            background-image: url("paris5.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+            /* object-position: 90% 80%; */
+            animation-name: bodi;
+            animation-duration: 20s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            overflow: scroll;
+            height: 600px;
+            padding-bottom: 300px !important;
+
+        }
+
+        @keyframes bodi {
+            10% {
+                background-image: url("paris 3.jpg");
+            }
+
+            30% {
+                /* background-image:url("paris4.webp"); */
+            }
+
+            60% {
+                background-image: url("paris8.jpg");
+            }
+
+            90% {
+                background-image: url("paris4.webp");
+
+            }
+        }
+
+        .second p {
+            color: white;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 0px 400px;
+            font-size: larger;
+            padding: 10px 20px;
+            animation-name: tt;
+            animation-iteration-count: 1s;
+            animation-duration: 2s;
+            animation-delay: -2;
+            width: 500px;
+            font-weight: bold;
+        }
+
+        @keyframes tt {
+            from {
+                transform: scale(0.0, 0.0);
+                width: 500px;
+                color: gold;
+            }
+
+            to {
+                transform: scale(1, 1);
+                width: 500px;
+                color: white;
+            }
+        }
+
+        .third p {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            font-family: cursive;
+            animation-name: cc;
+            animation-duration: 2s;
+            animation-iteration-count: 1s;
+            animation-delay: 0;
+            width: 600px;
+            margin: 20px 350px;
+            font-weight: bolder;
+        }
+
+        @keyframes cc {
+            from {
+                transform: scale(0.0, 0.0);
+                color: gold;
+            }
+
+            to {
+                transform: scale(1, 1.5);
+                color: white;
+            }
+        }
+
+        .dropaa {
+            display: inline-block;
+            position: relative;
+
+
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+            /* height: 300px; */
+            z-index: 1;
+            margin: 30px;
+
+        }
+
+        .dropaa:hover .dropdown {
+            background-color: black;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .dropdown a {
+            color: white;
+            margin: 20px;
+            font-size: larger;
+            text-decoration: none;
+            display: block;
+            /* background-color: blueviolet; */
+        }
+
+        .dropdown a:hover {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .dropaa a b {
+            padding-bottom: 20px;
+        }
+
+        .left {
+            position: relative;
+            display: inline-block;
+            min-width: 200px;
+            padding: 10x;
+        }
+
+        .lefty {
+            position: absolute;
+            display: none;
+            float: right;
+            left: 200px;
+            top: -5px;
+            background-color: black;
+            margin-left: 20px;
+        }
+
+        .left:hover .lefty {
+            display: block;
+            float: right;
+        }
+
+        .lefty a {
+            display: block;
+            font-size: small;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button input {
+            width: 160px;
+            height: 55px;
+            border-radius: 10px;
+            font-size: medium;
+            background-color: white;
+            color: black;
+        }
+
+        .button input:hover {
+            background-color: gold;
+            color: white;
+        }
+
+        .right {
+            position: relative;
+            min-width: 200px;
+            display: block;
+            border-radius: 10px;
+
+        }
+
+        .righty {
+            position: absolute;
+            display: none;
+            right: 180px;
+            top: -5px;
+            margin-right: 40px;
+            background-color: black;
+
+
+        }
+
+        .right:hover .righty {
+            display: block;
+        }
+
+        .righty a {
+            font-size: small;
+            display: block;
+            position: w;
+        }
+
+        .check {
+            width: 1000px;
+            box-sizing: border-box;
+            margin: 150px;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.648);
+            color: white;
+        }
+
+        .firsty {
+            width: 500px;
+            position: relative;
+            left: 400px;
+            top: 50px;
+        }
+
+        .dual {
+            width: 220px;
+            float: left;
+            margin: 15px;
+            position: relative;
+            left: 400px;
+            top: 50px;
+            font-size: larger;
+
+        }
+
+        .dual p {
+            margin: 5px;
+        }
+
+        .list {}
+
+        .span {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .firsty p {
+            padding: 5px;
+
+        }
+
+
+        .pp {
+            font-size: large;
+            font-weight: bold;
+            /* width: 200px; */
+        }
+
+        .potbody {
+            margin: 150px;
+            width: 1000px;
+            background-color: rgba(0, 0, 0, 0.632);
+            height: 450px;
+            padding-top: 20px;
+        }
+
+        .potfolio h1 {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        .potfolio p {
+            text-align: center;
+            font-size: x-large;
+            color: white;
+        }
+
+        .navv {
+            position: relative;
+            left: 130px;
+        }
+
+        .navv a {
+            width: 10%;
+            display: block;
+            margin: 5px;
+            text-align: center;
+            float: left;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            left: 100px;
+        }
+
+        .navv a:hover {
+            color: navy;
+            cursor: alias;
+        }
+
+        .galry {
+            width: 1000px;
+            height: 250px;
+            position: relative;
+            color: white;
+            top: 400px;
+            background-color: rgba(0, 0, 0, 0.644);
+            padding-top: 20px;
+
+        }
+
+        .pp {
+
+            margin: 20px 200px;
+
+        }
+
+        .galry p {
+            text-align: center;
+            margin: 20px 250px;
+            font-size: x-large;
+        }
+
+        .hh {
+            text-align: center;
+            margin: 20px 420px;
+            font-size: xx-large;
+        }
+
+        .service {
+            width: 940px;
+            height: 500px;
+            position: relative;
+            top: 500px;
+            background-color: rgba(0, 0, 0, 0.651);
+            color: white;
+            padding: 30px;
+
+        }
+
+        .service p {
+            width: 300px;
+            padding: 20px;
+        }
+
+        .service h2 {
+            width: 150px;
+            padding: 0px 20px;
+        }
+
+        .service h1 {
+            padding: 0px 20px;
+        }
+
+        .fom {
+            width: 1000px;
+            position: relative;
+            top: 600px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.644);
+            height: 790px;
+            margin-bottom: 500px;
+        }
+
+        .dsmall {
+            width: 200px;
+            float: left;
+            margin-bottom: 100px;
+        }
+
+        .try {
+            margin-top: 15px;
+        }
+
+        .dbig {
+            width: 690px;
+            float: left;
+            padding: 20px;
+            padding-left: 50px;
+        }
+
+        #fname,
+        #lname,
+        #email,
+        #select {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            border-bottom: solid 1px white;
+            width: 220px;
+            padding-top: 10px;
+
+
+        }
+
+        #email,
+        #select {
+            margin-left: 45px;
+        }
+
+        #select {
+            margin-left: 105px;
+        }
+
+        #msages {
+            background-color: rgba(0, 0, 0, 0.267);
+            border-bottom: solid 2px white;
+            margin-bottom: 20px;
+
+        }
+
+        label {
+            font-size: larger;
+        }
+
+        #submit {
+            height: 50px;
+            width: 150px;
+            margin: 30px 0px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .last {
+            color: white;
+            clear: left;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 40px;
+
+
+        }
+
+        #last {
+            margin-left: 430px;
+            /* height: 100px; */
+            width: 150px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: black;
+            background-color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        #first {
+            padding: 50px 20px 20px 50px;
+
+        }
+
+        #firsty {
+            padding: 10px 50px;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="body">
+        <div>
+            <div class="first">
+                <a class="a b" href="">Home</a>
+                <a class="a b" href="">About</a>
+                <a class="a b" href="">Portfolio</a>
+                <a class=" b" href="">Gallery</a>
+                <a class="a b" href="">Services</a>
+                <a class="a b" href="">Contact</a>
+                <div class="dropaa">
+                    <a style=" padding-bottom: 40px;" class="a b" href="">Features</a>
+                    <div class="dropdown">
+                        <a href="">light home</a>
+                        <a href="">Element</a>
+                        <a href="">Topography</a>
+                        <a href="">Slim Icon</a>
+                        <a href="">unicon</a>
+                        <a href="">Documentation</a>
+                        <div class="left">
+                            <a id="left" href="">submenue left</a>
+                            <div class="lefty">
+                                <a href="">Menue Item</a>
+                                <a href="">Menue Item</a>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <a id="right" href="">submenue right</a>
+                            <div class="righty">
+                                <a href="">Menue Item</a>
+                                <a href="">Menue Item</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="a c" href=""><span>23</span></a>
+                <a class="a c" href=""><span>32</span></a>
+                <a class="a c" href=""><span>23</span></a>
+            </div>
+            <div class="second">
+                <p>STREET $ NATURE PHOTOGRAPHER</p>
+            </div>
+            <div class="third">
+                <p>Smart Davido</p>
+            </div>
+            <div class="button">
+                <input type="button" value="VIEW MY WORK">
+            </div>
+            <div class="check">
+                <div class="firsty">
+                    <h1>Life is an adventure. Capture every minute. </h1>
+                    <p>I'm Kaylee, a street and nature photographer. My passion is taking photos of the most stunning
+                        places around the world. </p>
+                </div>
+
+                <div class="dual">
+                    <p class="pp">A Little About Me</p>
+                    <p><span class="span">N</span>ulla vitae elit libero, a pharetra augue. Dapuis mattis consectetur
+                        purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                        nibh, ut fermentum massa justo sit amet risus. Sed posuere consectetur est at lobortis. Fusce
+                        dapibus, tellus ac cursus. </p>
+                </div>
+                <div class="dual">
+                    <p class="pp">My Equipment</p>
+                    <ul class="list">
+                        <li>Canon Eos 5D Mark IV 24-105mm</li>
+                        <li>DJI Ronin MX 3-Axis Gimbal Stabilizer</li>
+                        <li>Manfrotto Compact Tripod</li>
+                        <li>Wondlan Wer01 Slider Time Lapse</li>
+                        <li>Canon EF100-400MM Lens</li>
+                        <li>Nikon D5 24-70mm F2.8</li>
+                        <li>Nikon Af-S 24Mm F/1.4G Ed Lens</li>
+                        <li>Wondlan Sniper Sn 2.1 Wf Wireless Dslr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="potbody">
+                <div class="potfolio">
+                    <h1>My Portfolio</h1>
+                    <p>I absolutely love shooting undiscovered places around <br>the world. Someday maybe outside...</p>
+                </div>
+                <nav class="navv">
+                    <a href="">ALL</a>
+                    <a href="">FOODS</a>
+                    <a href="">DRINKS</a>
+                    <a href="">EVENTS</a>
+                    <a href="">PASTRIES</a>
+                </nav>
+                <div class="galry">
+                    <h2 class="hh">My Gallery</h2>
+                    <p>Here are some of the best places around the world</p>
+                </div>
+                <div class="service">
+                    <h1>My Services</h1>
+                    <p>I'd like to give you a unique photography experience, capture your products with excellent
+                        composition.</p>
+                    <h2>Photography</h2>
+                    <p>Curabitur blandit lacus porttitor ridiculus mus. Morbi leo consectetur porta ac vestibulum at
+                        eros sit amet non.</p>
+                    <h2>Retouch</h2>
+                    <p>Curabitur blandit lacus porttitor ridiculus mus. Morbi leo consectetur porta ac vestibulum at
+                        eros sit amet non</p>
+                    <h2>Filming</h2>
+                    <p>Curabitur blandit lacus porttitor ridiculus mus. Morbi leo consectetur porta ac vestibulum at
+                        eros sit amet non.</p>
+                </div>
+                <div class="fom">
+                    <h1 id="first">Get In Touch</h1>
+                    <p id="firsty">Got any questions? Don't hesitate to get in touch.</p>
+                    <form action="" class="adual dbig">
+                        <label for="fname">First Name *</label>
+                        <input type="text" name=" fname" id="fname">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" name="lname" id="lname"> <br>
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email">
+
+                        <select name="select" id="select">
+                            <option value="Select a subgect">Select a subgect</option>
+                            <option value="Question">Question</option>
+                            <option value="picing">picing</option>
+                            <option value="other">other</option>
+                        </select><br>
+                        <label for="msages">Messages *</label><br>
+                        <textarea name="msages" id="msages" rows="10px" cols="80px"></textarea><br>
+                        <input type="checkbox" name="cbox" id="cbox">
+                        <label for="cbox">i agree to <a style="text-decoration: none; color: gold;" href="#">Terms and
+                                policy</a></label><br>
+                        <input type="submit" value="SEND MESSAGES" id="submit">
+                    </form>
+                    <div class="adual dsmall " style="margin-bottom: 200px;">
+                        <h3 class="try">Address</h3>
+                        <p class="try">Moonshine St. 14/05 Light City,Paris, France</p>
+                        <h3 class="try">Phone Number</h3>
+                        <p class="try">+2349151637028</p>
+                        <p class="try">+2349151637028</p>
+                        <h3 class="try">E-mail</h3>
+                        <p class="try">Smartdavido14@gmail.com</p>
+                    </div>
+                    <h1 class="last">Follow Me on Instagram</h1>
+                    <a class="last" id="last" href="">FOLLOW ME</a>
+                    <p class="last">© 2025 Locus. All rights reserved.</p>
+                </div>
+                <div class="gt">
+
+                </div>
+    </section>
+</body>
+
+</html>

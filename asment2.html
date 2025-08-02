@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey.form</title>
+        <style>
+            *{
+                border: solid 0px;
+            }
+            .a{
+                border: solid 0px;
+                margin-left: 310px;
+                margin-right: 320px;
+                padding: 50px 50px;
+                font-size: larger;
+                background-color:rgb(109, 146, 215) ;
+                border-radius: 10px;
+            }
+            .hd,.hdi{
+               text-align: center;
+               font-family: cursive;
+               
+            }
+            .yy,.xx,.vv{
+                width: 750px;    
+            }
+            .zy,.zx,.yy,.xx,.zyx,.vv{
+                height: 40px;
+                border-radius: 5px;
+            }
+            input,select{
+                margin-bottom: 25px;
+            }
+            .hd{
+                font-size: xx-large;
+            }
+            body{
+                background-color: rgb(190, 231, 125)  ;
+            }
+            .vv{
+                background-color: rgb(202, 223, 98);
+            }
+        </style>
+    </head>
+    <body>
+    <h2 class="hd">FreeCodCamp Survey form</h2>
+    <p class="hdi">Thanks you for taking the time to help us improve this platfrom</p>
+    <form class="a">
+        <Label for="jk">Name</Label><br>
+        <input type="text" name="name" id="jk" size="100" class="zy" placeholder="Enter your name"><br>
+        <label for="jy">E-mail</label><br>
+        <input type="email" name="name" id="jy" size="100" class="zx" placeholder="Enter your email">
+        <label for="jz">Age(Optional)</label><br>
+        <input type="number" name="name" id="jz" size="98" class="zyx" placeholder="Age"><br>
+        <label for="see">which option best describe your current role?</label><br>
+        <select name="option" id="see" class="yy">
+            <option value="">select current role</option>
+            <option value="">Student</option>
+            <option value="">full time job</option>
+            <option value="">full time learner</option>
+            <option value="">prefer not to say</option>
+            <option value="">others</option>
+        </select><br>
+        <label for="a">Would you recommend freeCodeCamp to a friend?</label><br>
+        <input type="radio" name="definately" id="a" value="definately">
+        <label for="b">Definately</label><br>
+        <input type="radio" name="definately" id="b" value="maybe">
+        <label for="c">Maybe</label><br>
+        <input type="radio" name="definately" id="c" value="notsure">
+        <label for="notsure">Not sure</label><br>
+        <label for="seey">What is your favorite feature of freeCodeCamp?</label><br>
+        <select name="pick2" id="seey" class="xx">
+            <option value="select">select an option</option>
+            <option value="">challenges</option>
+            <option value="">Projects</option>
+            <option value="">Community Value</option>
+            <option value="">open source</option>
+        </select>
+     <label for="e">What would you like to see improved? (Check all that apply)</label><br>
+     <input type="checkbox" name="wwylike" id="e">
+     <label for="f">Fornt-end project</label><br>
+     <input type="checkbox" name="wwylike" id="f">
+     <label for="g">Bacl-end Project</label><br>
+     <input type="checkbox" name="wwylike" id="g">
+     <label for="h">Data Visualization</label><br>
+     <input type="checkbox" name="wwylike" id="h">
+     <label for="i">Challenges</label><br>
+     <input type="checkbox" name="wwylike" id="i">
+     <label for="j">Open Source Community</label><br>
+     <input type="checkbox" name="wwylike" id="j">
+     <label for="k">Gitter help rooms</label><br>
+     <input type="checkbox" name="wwylike" id="k">
+     <label for="l">Videos</label><br>
+     <input type="checkbox" name="wwylike" id="l">
+     <label for="m">City Meetups</label><br>
+     <input type="checkbox" name="wwylike" id="m">
+     <label for="n">Wiki</label><br>
+     <input type="checkbox" name="wwylike" id="n">
+     <label for="o">Forum</label><br>
+     <input type="checkbox" name="wwylike" id="o">
+     <label for="p">Additional Courses</label>
+     <label for="p">Any comments or suggestions?</label><br>
+     <textarea name="submit" id="p" rows="12" cols="104" placeholder="Enter your comments here......."></textarea><br>
+     <input type="submit" value="Submit" class="vv">
+    </form>
+
+    </body>
+</html>
